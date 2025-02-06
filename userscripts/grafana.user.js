@@ -82,3 +82,11 @@ const dispatchEscape = () => {
 // document.addEventListener("keyup", (e) => {
 //     console.log("keyup", e)
 // });
+
+
+// prevent swiping backwards
+let styleElement = GM_addStyle(`
+html, body {
+  overscroll-behavior-x: none;
+}
+`);
