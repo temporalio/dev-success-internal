@@ -9,12 +9,27 @@ manager.
 
 
 # Installing
+You can either install 1 by one, or [all of them at once](#install-all-of-them-at-once)
+
 1. Install [Violentmonkey](https://violentmonkey.github.io/)
-2. Find the script you want
-3. Click `Raw`
+2. start a local file server
+   ```bash
+   python3 -m http.server &
+   ```
+3. Find the script you want to install, click on it
 4. The Violentmonkey UI should pop up to ask if you want to install it
 
-The scripts auto update once a day by default (config in Violentmonkey)
+**(Pending approval)** The scripts auto update once a day by default (config in Violentmonkey)
+
+
+## Install all of them at once
+Tip: when the Violetmonkey UI opens, select `Reinstall+Close (⌘Enter)` so you can just spam `⌘+enter`
+
+```bash
+python3 -m http.server &
+find . | grep "user.js" | sed 's/./http:\/\/localhost:8000/' | xargs open
+fg
+```
 
 
 # Contributing
