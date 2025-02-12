@@ -4,6 +4,7 @@
 // @match       https://github.com/orgs/temporalio/sso*
 // @match       https://github.com/temporalio/*
 // @match       https://github.com/temporalio
+// @match       https://github.com/pages/auth
 // @grant       none
 // @version     1.0
 // @author      Kevin Woo
