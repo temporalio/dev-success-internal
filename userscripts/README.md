@@ -31,6 +31,9 @@ find . | grep "user.js" | sed 's/./http:\/\/localhost:8000/' | xargs open
 fg
 ```
 
+- You can use `grep -E "(auto|zen)"` to regex match the ones you want
+- You can use `-v` flag to ignore
+
 
 # Contributing
 
